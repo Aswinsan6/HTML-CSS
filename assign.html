@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>polo web</title>
+    <link rel='stylesheet' href="assign.css" media="all"/>
+    <link rel='stylesheet' href="body.css" media="all"/>
+    <link rel='stylesheet' href="footer.css" media="all"/>
+    <script src="https://use.fontawesome.com/e4d2c61358.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="main">
+<!-- header -->
+<div >
+        <div class="main-menu">
+        <div class="log">
+          <img class="img" src="data:image/png;base64,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" alt="">
+        </div>
+            <ul class="menu-list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li></li>
+            </ul>
+        </div>
+        <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></div>
+        <div class="swiper-slide"><img src="https://freedesignfile.com/upload/2017/02/Girl-shopping-HD-picture-05.jpg"></div>
+        <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/full-length-portrait-happy-family_171337-2281.jpg?size=626&ext=jpg"></div>
+        <div class="swiper-slide"><img src="https://c0.wallpaperflare.com/preview/192/583/707/black-friday-casual-cheerful-daytime.jpg"></div>
+        <div class="swiper-slide"><img src="https://www.vhv.rs/dpng/d/476-4762461_jeans-jeans-for-men-jeans-online-jeans-online.png"></div>
+        <div class="swiper-slide"><img src="https://st3.depositphotos.com/20363444/31955/i/1600/depositphotos_319558888-stock-photo-happy-friends-holding-shopping-bags.jpg"></div>
+        <div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66taJfaKCx0whGAHBPiXjZ165SmGzobYt6Q&usqp=CAU">7</div>
+        <div class="swiper-slide"><img src="https://i.pinimg.com/originals/45/f6/21/45f62111e096e8205a95271b9c611bec.jpg"></div>
+        <div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiTyBuNtIbBfLGlvOF-IORlZYwDH97yXulsw&usqp=CAU"></div>
+        <div class="swiper-slide"><img src="https://www.teahub.io/photos/full/182-1829976_holiday-shopping.jpg"></div>
+        </div>
+    <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+  </div>
+         <!--main menu starts here  -->
+    <div class="main-menu2">
+            <div class="log2">
+              <h4>BREAKING NEWS</h4>
+            </div>
+            <ul class="menu-list2">
+               <li><a href="#">HOME</a>
+                <div class="drop-down">
+                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            <div class="content-menu">
+                                <p> One</p>
+                                <p> Two</p>
+                                <p>Three</p>
+                            </div>
+                </div>
+                </li>
+                <li><a href="#">HOME</a>
+                    <div class="drop-down">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                <div class="content-menu">
+                                    <p> One</p>
+                                    <p> Two</p>
+                                    <p>Three</p>
+                                </div>
+                    </div>
+                    </li>
+                    <li><a href="#">HOME</a>
+                        <div class="drop-down">
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                    <div class="content-menu">
+                                        <p> One</p>
+                                        <p> Two</p>
+                                        <p>Three</p>
+                                    </div>
+                        </div>
+                        </li>
+                        <li><a href="#">HOME</a>
+                            <div class="drop-down">
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                        <div class="content-menu">
+                                            <p> One</p>
+                                            <p> Two</p>
+                                            <p>Three</p>
+                                        </div>
+                            </div>
+                        </li>
+                    </ul>
+     </div>
+
+     </div >
+    
+    <!-- BODY of the website -->
+    <h2 class="high">HIGHLIGHTS</h2>
+    <div>
+    <div class="main-body">
+        <div class="box1">
+           
+            <img src="https://c.ndtvimg.com/2020-01/tvr3pq48_shawarma_120x90_21_January_20.jpg" width="400px">
+        <p class="sub1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quae aliquam quis? Natus neque odio amet aut impedit molestiae qui. Vel id voluptates quas autem! Modi, quisquam dicta! Quisquam, accusamus?</p>
+    </div>
+    
+        <div class="box2">
+            <div class="sample2"> 
+                <img src="https://i.pinimg.com/originals/cb/16/bb/cb16bb284a2a80c75041c80ba63e62d3.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="sample2"> 
+                <img src="https://tinyjpg.com/images/social/website.jpg" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample2"> 
+                <img src="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample2"> 
+                <img src="https://images.template.net/wp-content/uploads/2016/04/27043339/Nature-Wallpaper1.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="down">
+                <h3>NON-DEVELOPMENT</h3>
+            </div>
+        
+        </div>
+
+        <div class="box3">
+            <div class="sample2"> 
+                <img src="https://i.pinimg.com/originals/6f/fb/8f/6ffb8f97f6850ac73cf12b5fe68b3e04.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="sample2"> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMERQnW3IaXY4fDGv9u5gohtqhhkGEPTn7Bw&usqp=CAU" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample2"> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0p-4QWnKGWV8nDRU_rl9_ejPNSjbozzkeVw&usqp=CAU" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample2"> 
+                <img src="https://images.all-free-download.com/images/graphiclarge/beautiful_natural_scenery_02_hd_picture_166231.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="down">
+                <h3>NON-DEVELOPMENT</h3>
+            </div>
+        </div>
+       
+    </div>
+<!-- second-body -->
+    <div class="second-body">
+        <div class="box1">
+            <h2>FOOD</h2>
+           
+            <img src="https://www.foodiesfeed.com/wp-content/uploads/2019/06/beautiful-vibrant-shot-of-traditional-korean-meals.jpg" width="400px">
+            <h3>maco be naque at mi</h3>
+        <p class="sub1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+
+            Laborum quae aliquam quis? Natus neque odio amet aut impedit molestiae qui.<br><br><br> Vel id voluptates quas autem! Modi, quisquam dicta!<br><br><br> Quisquam, accusamus?</p>
+    </div>
+    
+        <div class="box1">
+            <h2>TECHNOLGY</h2>
+            <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="400px">
+            <h3>maco be naque at mi</h3>
+            <p class="sub1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+    
+                Laborum quae aliquam quis? Natus neque odio amet aut impedit molestiae qui.<br><br><br> Vel id voluptates quas autem! Modi, quisquam dicta!<br><br><br> Quisquam, accusamus?</p>
+        
+        </div>
+        <div class="box1">
+            <h2>AUTO</h2>
+            <img src="https://miro.medium.com/max/1013/1*OW0XC-CqMFhJingCMIJ3nQ.jpeg" width="400px">
+            <h3>maco be naque at mi</h3>
+            <p class="sub1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+    
+                Laborum quae aliquam quis? Natus neque odio amet aut impedit molestiae qui.<br><br><br> Vel id voluptates quas autem! Modi, quisquam dicta!<br><br><br> Quisquam, accusamus?</p>
+        
+        </div>
+        </div>
+        <div class="advertisement">
+            <h2>ADVERTISEMENT</h2>
+        </div>
+    
+        <!--sub-body  -->
+        <div class="sub-body">
+            <div class="box1">
+                <h2>TECH</h2>
+                <div class="sample3"> 
+                    <img src="https://d6fiz9tmzg8gn.cloudfront.net/wp-content/uploads/2019/02/15tech-Banner.jpg" width="80px">             
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="sample3"> 
+                    <img src="https://freedesignfile.com/upload/2016/03/High-tech-blue-website-template-vector.jpg" width="80px"> 
+                
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>            <div class="sample3"> 
+                    <img src="https://miro.medium.com/max/1600/0*MhTQ74fnkIV1GdUw.png" width="80px"> 
+                
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>            <div class="sample3"> 
+                    <img src="https://static.techspot.com/fileshost/newspics3/2016/Vk1Q0pB.jpg" width="80px">             
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+        </div>
+        
+            <div class="box2">
+                <H2>SPORT</H2>
+                <div class="sample3"> 
+                    <img src="https://www.proprofs.com/quiz-school/topic_images/p18lq7ediepl816p6s04171vo23.jpg" width="80px">             
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="sample3"> 
+                    <img src="https://biew.ac.in/wp-content/uploads/2020/02/biew-sports.jpg" width="80px"> 
+                
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>            <div class="sample3"> 
+                    <img src="https://freepngimg.com/thumb/sports_equipment/22434-8-sport-image.png" width="80px"> 
+                
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>            <div class="sample3"> 
+                    <img src="https://image.freepik.com/free-vector/sport-equipment-concept_1284-13034.jpg" width="80px">             
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            
+            </div>
+        
+    
+            <div class="box3">
+                <h2>FASHION</h2>
+                <div class="sample3"> 
+                    <img src="https://image.shutterstock.com/image-vector/color-sport-background-football-basketball-260nw-1315841180.jpg" width="80px">             
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="sample3"> 
+                    <img src="https://static.businessworld.in/article/article_extra_large_image/1575887765_1rBOuB_digital_fashion.jpg" width="80px"> 
+                
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>            <div class="sample3"> 
+                    <img src="https://planetfashion.imgix.net/resources/img/planet_fashion/PF_D_S2_aboutUs.jpg?auto=format" width="80px"> 
+                
+  nb                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>            <div class="sample3"> 
+                    <img src="https://www.rmit.edu.au/content/dam/rmit/rmit-images/college-of-dsc-images/schools/fashion-and-textiles/fashion-textiles-homepage-hero.jpg" width="80px">             
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            
+            </div>
+            <br><br>
+            <div class="adver">
+    <div class="advertisement2">
+        <h2>ADVERTISEMENT</h2>
+    </div>
+    </div>
+    <div class="sub-body">
+        <div class="box1">
+            <h2>ENTERTAINMENT</h2>
+            <div class="sample3"> 
+                <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="sample3"> 
+                <img src="https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2014/02/media-shutterstock_111209576.png" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample3"> 
+                <img src="https://industrywired.com/wp-content/uploads/2019/12/Media-and-Entertainment.jpg" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample3"> 
+                <img src="https://www.e-spincorp.com/wp-content/uploads/2019/01/Media-Entertainment-1024x512.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+    </div>
+    
+        <div class="box2">
+            <H2>NATURE</H2>
+            <div class="sample3"> 
+                <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="sample3"> 
+                <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample3"> 
+                <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample3"> 
+                <img src="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        
+        </div>
+
+
+        <div class="box3">
+            <h2>POLITICS</h2>
+            <div class="sample3"> 
+                <img src="https://www.imf.org/external/pubs/ft/fandd/2020/06/images/frieden-1600.jpg" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="sample3"> 
+                <img src="https://static01.nyt.com/images/2018/06/01/smarter-living/yolb-guide-june-politics-slide-O6EW/yolb-guide-june-politics-slide-O6EW-superJumbo.jpg" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample3"> 
+                <img src="https://i.ytimg.com/vi/HuK2WPmcbjA/maxresdefault.jpg" width="80px"> 
+            
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>            <div class="sample3"> 
+                <img src="https://miro.medium.com/max/3004/1*mBDvKqK7CbHPGVQw4L3IAw.png" width="80px">             
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+        </div><br><br><br>
+        
+        <!-- FOOTER -->
+        <div class="command">
+            <h3>Ready to purchase a polo template?</h3>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum amet aut est cumque </h5><br>
+            <button class="butt">Purchase</button>
+        </div>
+        <div class="footer">
+        <div class="coloumn1">
+           <h2>POLO HTMLS Template</h2><br><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,<br> sit nesciunt neque fugit voluptate, corporis incidunt impedi</p>
+            <button class="purchase">Purchase now</button>
+        </div>
+        <div class="column2">
+            <h2>DISCOVER</h2><br><br>
+            <p><a href="#"></a>Features</p>
+            <p><a href="#"></a>Layout</p>
+            <p><a href="#"></a>Corporation</p>
+            <p><a href="#"></a>Column</p>
+            <p><a href="#"></a>Customers</p>
+
+        </div>
+
+        <div class="column3">
+            <h2>FEATURES</h2><br><br>
+            <p><a href="#"></a>Hoodies</p>
+            <p><a href="#"></a>Bangroos</p>
+            <p><a href="#"></a>Corporation</p>
+            <p><a href="#"></a>Footer</p>
+            
+        </div>
+
+        <div class="column4">
+            <h2><a href="#"></a>PAGES</h2><br><br>
+            <p><a href="#"></a>Work</p>
+            <p><a href="#"></a>Bangroos</p>
+            <p><a href="#"></a>Corporation</p>
+            
+        </div>
+        <div class="column5">
+            <h2>SUPPORT</h2><br><br>
+            <p><a href="#"></a>Help center</p>
+            <p><a href="#"></a>Workout</p>
+            <p><a href="#"></a>Corporation</p>
+            
+        </div>
+
+        <!-- end footer -->
+
+    </div>
+    <div class="end-footer">
+        <p>© 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved. INSPIRO</p>
+    </div>
+
+  
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper('.swiper-container', {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+     },
+   });
+ 
+
+   function slide(){
+   document.getElementById('slide-menu').classList.toggle('newclass');
+}
+ </script>
+   
+<!-- script files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
